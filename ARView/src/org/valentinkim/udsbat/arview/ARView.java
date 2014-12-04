@@ -106,10 +106,10 @@ public class ARView extends Activity implements SensorEventListener{
 
 
 		FrameLayout headerFrameLayout = new FrameLayout(this);
-		RelativeLayout headerRelativeLayout = new RelativeLayout(this);
+		/*RelativeLayout headerRelativeLayout = new RelativeLayout(this);
 		RelativeLayout.LayoutParams relaLayoutParams  = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.FILL_PARENT, RelativeLayout.LayoutParams.FILL_PARENT);
 		headerRelativeLayout.setBackgroundColor(Color.BLACK);
-		headerRelativeLayout.setLayoutParams(relaLayoutParams);
+		headerRelativeLayout.setLayoutParams(relaLayoutParams);*/
 		Button button = new Button(this);
 		RelativeLayout.LayoutParams buttonparams = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
 		buttonparams.addRule(RelativeLayout.ALIGN_PARENT_LEFT, RelativeLayout.TRUE);
@@ -125,15 +125,15 @@ public class ARView extends Activity implements SensorEventListener{
 		titleTextView.setText("Augmented Reality View");
 
 
-		headerRelativeLayout.addView(button);
+		/*headerRelativeLayout.addView(button);
 		headerRelativeLayout.addView(titleTextView);
-		headerFrameLayout.addView(headerRelativeLayout);
+		headerFrameLayout.addView(headerRelativeLayout);*/
 		setContentView(cameraView);
 		addContentView(radarMarkerView,  new LayoutParams(
 				LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
-		addContentView(headerFrameLayout, new FrameLayout.LayoutParams(
+		/*addContentView(headerFrameLayout, new FrameLayout.LayoutParams(
 				LayoutParams.FILL_PARENT, 44,
-				Gravity.TOP));
+				Gravity.TOP));*/
 		addContentView(upperLayerLayout, upperLayerLayoutParams);
 
 		if(!isInited){
