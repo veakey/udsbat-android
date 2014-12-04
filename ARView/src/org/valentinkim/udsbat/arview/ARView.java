@@ -1,8 +1,12 @@
-package com.raw.arview;
+package org.valentinkim.udsbat.arview;
 
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+
+import org.valentinkim.udsbat.utils.Compatibility;
+import org.valentinkim.udsbat.utils.PaintUtils;
+
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Canvas;
@@ -32,8 +36,6 @@ import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.raw.utils.Compatibility;
-import com.raw.utils.PaintUtils;
 
 public class ARView extends Activity implements SensorEventListener{
 
@@ -289,7 +291,7 @@ class CameraView extends SurfaceView implements SurfaceHolder.Callback {
 			Camera.Parameters parameters = camera.getParameters();
 			try {
 				List<Camera.Size> supportedSizes = null;
-				supportedSizes = com.raw.utils.Compatibility.getSupportedPreviewSizes(parameters);
+				supportedSizes = org.valentinkim.udsbat.utils.Compatibility.getSupportedPreviewSizes(parameters);
 
 				Iterator<Camera.Size> itr = supportedSizes.iterator(); 
 				while(itr.hasNext()) {

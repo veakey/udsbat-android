@@ -1,10 +1,10 @@
-package com.raw.arview;
+package org.valentinkim.udsbat.arview;
+
+import org.valentinkim.udsbat.utils.PaintUtils;
 
 import android.graphics.Color;
 import android.location.Location;
 import android.util.TypedValue;
-
-import com.raw.utils.PaintUtils;
 
 
 public class RadarView{

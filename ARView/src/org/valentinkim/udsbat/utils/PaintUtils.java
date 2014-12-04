@@ -1,6 +1,6 @@
-package com.raw.utils;
+package org.valentinkim.udsbat.utils;
 
-import com.raw.arview.RadarView;
+import org.valentinkim.udsbat.arview.RadarView;
 
 import android.graphics.Canvas;
 import android.graphics.Color;

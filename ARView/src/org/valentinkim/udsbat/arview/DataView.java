@@ -1,7 +1,11 @@
-package com.raw.arview;
+package org.valentinkim.udsbat.arview;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import org.valentinkim.udsbat.utils.Camera;
+import org.valentinkim.udsbat.utils.PaintUtils;
+import org.valentinkim.udsbat.utils.RadarLines;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -20,9 +24,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.raw.utils.Camera;
-import com.raw.utils.PaintUtils;
-import com.raw.utils.RadarLines;
+import org.valentinkim.udsbat.arview.R;
 
 
 /**
